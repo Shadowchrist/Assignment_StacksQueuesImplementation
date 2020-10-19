@@ -15,4 +15,19 @@ public class ImplementStack<K> {
 	public void printStack() {
 		list.printLinkedList(list.getHead());		
 	}
+	
+	public MyNode<K> peek() {
+		return list.getHead();
+	}
+	
+	public void pop() {
+		list.deleteFirstElement(list.getHead());
+	}
+
+	public boolean isEmpty() {
+		if(list.size(list.getHead())==0)
+			return true;
+		else
+			return false;
+	}
 }
